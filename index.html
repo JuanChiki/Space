@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv"></canvas>
+  <div id="touch">
+    <div class="grp"><button data-k="left">&lt;</button><button data-k="right">&gt;</button><button data-k="opts">opciones</button><button data-k="map">mapa</button><button data-k="cat">catalogo</button><button data-k="inv">inventario</button><button data-k="base">base</button><button data-k="con">consola</button><button data-k="chr">historia</button></div>
+    <div class="grp"><button data-k="dock">atracar</button><button data-k="land">aterrizar</button><button data-k="fire">disparo</button><button data-k="scan">escanear</button><button data-k="down">freno</button><button data-k="shift">turbo</button><button data-k="up" class="big">impulso</button></div>
+  </div>
+</div>
+
+<script src="js/core/env.js"></script>
+<script src="js/config.js"></script>
+<script src="js/core/math.js"></script>
+<script src="js/core/state.js"></script>
+<script src="js/data/planets.js"></script>
+<script src="js/data/factions.js"></script>
+<script src="js/data/economy.js"></script>
+<script src="js/data/equipment.js"></script>
+<script src="js/data/signals.js"></script>
+<script src="js/data/ships.js"></script>
+<script src="js/data/surface.js"></script>
+<script src="js/data/regions.js"></script>
+<script src="js/data/construction.js"></script>
+<script src="js/universe/planets.js"></script>
+<script src="js/universe/signals.js"></script>
+<script src="js/universe/regions.js"></script>
+<script src="js/universe/sectors.js"></script>
+<script src="js/player/progression.js"></script>
+<script src="js/player/ship.js"></script>
+<script src="js/player/inventory.js"></script>
+<script src="js/player/reputation.js"></script>
+<script src="js/entities/stations.js"></script>
+<script src="js/entities/enemies.js"></script>
+<script src="js/systems/scanning.js"></script>
+<script src="js/systems/exploration.js"></script>
+<script src="js/systems/flight.js"></script>
+<script src="js/systems/combat.js"></script>
+<script src="js/systems/economy.js"></script>
+<script src="js/systems/missions.js"></script>
+<script src="js/systems/docking.js"></script>
+<script src="js/systems/events.js"></script>
+<script src="js/systems/waypoint.js"></script>
+<script src="js/systems/regions.js"></script>
+<script src="js/systems/construction.js"></script>
+<script src="js/systems/contacts.js"></script>
+<script src="js/rendering/ascii.js"></script>
+<script src="js/rendering/effects.js"></script>
+<script src="js/rendering/camera.js"></script>
+<script src="js/rendering/planets.js"></script>
+<script src="js/rendering/stations.js"></script>
+<script src="js/rendering/world.js"></script>
+<script src="js/rendering/ships.js"></script>
+<script src="js/rendering/surface.js"></script>
+<script src="js/rendering/hud.js"></script>
+<script src="js/rendering/render.js"></script>
+<script src="js/ui/options.js"></script>
+<script src="js/ui/inventory.js"></script>
+<script src="js/ui/menus.js"></script>
+<script src="js/ui/base.js"></script>
+<script src="js/ui/archive.js"></script>
+<script src="js/ui/map.js"></script>
+<script src="js/ui/catalog.js"></script>
+<script src="js/ui/log.js"></script>
+<script src="js/ui/console.js"></script>
+<script src="js/ui/chronicle.js"></script>
+<script src="js/ui/input.js"></script>
+<script src="js/core/update.js"></script>
+<script src="js/debug.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

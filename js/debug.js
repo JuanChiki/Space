@@ -1,0 +1,4 @@
+'use strict';
+/* Ganchos de depuracion (window.__astro) usados por los tests de tools/. No afectan al juego. */
+
+window.__astro={ getSector, sectorStats, sigPlan, openArch, closeArch, discovered, visited, pings, logBook, R, regionAt, conRun, toggleWp, MODS, TECH, REG, PARTS, setFs, setPage:(p)=>{ dockPage=p; sel=0; }, get Z(){ return Z; }, get docked(){ return docked; }, get surf(){ return surf; }, get curReg(){ return curRegK; }, spawnFoe, spawnBoss, get foes(){ return foes; }, get shots(){ return shots; }, get loot(){ return loot; }, near:()=>near, dump:()=>{ const o=[]; for(let r=0;r<rows;r++) o.push(G.slice(r*cols,(r+1)*cols).join('')); return o.join('\n'); }, step:(dt)=>{ update(dt); render(); }, keys, ship, shipCells, setup:(c,r)=>{ cols=c; rows=r; G=new Array(cols*rows).fill(' '); GC=new Array(cols*rows).fill(''); RY=2; } };

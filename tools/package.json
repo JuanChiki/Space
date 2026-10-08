@@ -1,0 +1,3 @@
+{ "name": "space-tools", "private": true, "type": "module",
+  "description": "Herramientas de desarrollo de Space (no hacen falta para jugar)",
+  "devDependencies": { "acorn": "^8", "acorn-walk": "^8", "eslint": "^9", "globals": "^15" } }

@@ -1,0 +1,28 @@
+:root{
+  --bg:#02030a;
+  --ink:#b9f5dc;
+  --dim:#3f6a5c;
+  --amber:#ffb454;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+html{height:100%;background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);overflow:hidden;
+  font-family:"Space Mono",ui-monospace,Menlo,Consolas,monospace;-webkit-user-select:none;user-select:none;}
+#stage{position:relative;width:100%;height:100%;}
+canvas{display:block;width:100%;height:100%;}
+#stage::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse at center,transparent 58%,rgba(0,0,0,.6) 100%),
+    repeating-linear-gradient(to bottom,rgba(180,255,220,.022) 0 1px,transparent 1px 3px);}
+#touch{display:none;position:absolute;left:0;right:0;bottom:0;padding:0 10px 10px;
+  justify-content:space-between;align-items:flex-end;pointer-events:none;z-index:2;}
+.grp{display:flex;gap:8px;align-items:flex-end;pointer-events:auto;}
+#touch button{font:700 13px "Space Mono",monospace;color:var(--ink);background:rgba(8,20,18,.72);
+  border:1px solid var(--dim);border-radius:4px;min-width:52px;height:52px;padding:0 10px;touch-action:none;}
+#touch{flex-wrap:wrap;gap:6px}#touch .grp:last-child{max-width:70%;justify-content:flex-end;flex-wrap:wrap}
+#touch button.big{height:64px;min-width:92px;border-color:var(--amber);color:var(--amber);}
+#touch button:active,#touch button.on{background:rgba(40,90,70,.8);}
+@media (pointer:coarse){#touch{display:flex;}}
